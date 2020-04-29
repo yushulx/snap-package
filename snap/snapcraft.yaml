@@ -1,0 +1,22 @@
+name: barcode-reader 
+base: core18 
+version: '7.4' 
+summary: Barcode SDK for 1D barcode, QR Code, Data Matrix, PDF417, Aztec Code, MaxiCode 
+description: |
+  An enterprise-class barcode SDK that enables you to efficiently embed barcode reading functionality in your web, desktop or mobile applications with a few lines of code.
+icon: snap/gui/logo.png
+grade: stable 
+confinement: strict  
+
+parts:
+  barcode-reader:
+    plugin: make
+    build-packages: [gcc, g++, make]
+    stage-packages: [libstdc++6]
+    source: src
+
+apps:
+  barcode-reader:
+    command: barcode-reader
+    plugs: [home]
+
