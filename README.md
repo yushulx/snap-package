@@ -15,3 +15,6 @@ sudo snap install barcode-reader
 ```
 barcode-reader <image file>
 ```
+
+## Blog
+[How to Build and Publish Snap Packages with Linux Shared Libraries](https://www.codepool.biz/snap-snapcraft-linux-shared-library.html)
